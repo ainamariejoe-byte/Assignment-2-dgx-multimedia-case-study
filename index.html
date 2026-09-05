@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DGX 2026 Multimedia Experience</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="nav-container">
+    <a href="#home" class="brand">DGX 2026</a>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#highlights">Highlights</a>
+      <a href="#video">Video</a>
+      <a href="#cruise">River Cruise</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <picture>
+    <source type="image/webp"
+      srcset="images/hero-800.webp 800w, images/hero-1200.webp 1200w"
+      sizes="100vw">
+    <img class="hero-image" src="images/hero-1200.jpg"
+      alt="Delegates attending Digital Government Exchange 2026"
+      width="1200" height="800">
+  </picture>
+  <div class="hero-overlay">
+    <div class="hero-content">
+      <p class="eyebrow">Digital Government Exchange 2026</p>
+      <h1>Connecting People, Ideas and Digital Government</h1>
+      <p>Explore the people, discussions and shared experiences behind DGX 2026 in Kuching, Sarawak.</p>
+      <a href="#about" class="button">Explore the Event</a>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section reveal">
+  <div class="container">
+    <p class="section-label">About DGX</p>
+    <h2>Digital Government Exchange 2026</h2>
+    <p class="lead">DGX 2026 brings together government representatives, technology professionals, speakers and industry participants to exchange knowledge and explore developments in digital government.</p>
+    <div class="event-details">
+      <article class="detail-card"><h3>Date</h3><p>10 September 2026</p></article>
+      <article class="detail-card"><h3>Venue</h3><p>voco Kuching, Sarawak</p></article>
+      <article class="detail-card"><h3>Experience</h3><p>Keynotes, knowledge exchange, networking and delegate activities.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="highlights" class="section section-alt reveal">
+  <div class="container">
+    <p class="section-label">Event Highlights</p>
+    <h2>Explore the DGX Experience</h2>
+    <p>Select a category to explore different aspects of the event.</p>
+
+    <div class="filter-buttons" role="group" aria-label="Filter event photographs">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="keynote">Keynotes</button>
+      <button class="filter-btn" data-filter="networking">Networking</button>
+      <button class="filter-btn" data-filter="activity">Activities</button>
+    </div>
+
+    <div class="gallery">
+      <article class="gallery-item keynote-feature" data-category="keynote">
+        <picture>
+          <source
+            type="image/webp"
+            srcset="images/keynote-speakers-640.webp 640w, images/keynote-speakers-960.webp 960w, images/keynote-speakers-1440.webp 1440w, images/keynote-speakers-1920.webp 1920w"
+            sizes="(max-width: 700px) 100vw, (max-width: 1100px) 90vw, 1000px">
+          <img
+            class="keynote-speakers-image"
+            src="images/keynote-speakers.jpg"
+            alt="DGX26 keynote speakers: Nicolas Khoo, Anuar Fariz Fadzil and Tanja Coyne"
+            loading="lazy"
+            width="1920"
+            height="1080">
+        </picture>
+        <div class="gallery-text">
+          <h3>Keynote Speakers</h3>
+          <p>
+            Meet the featured DGX26 keynote speakers and view their professional roles at a readable size.
+          </p>
+        </div>
+      </article>
+
+      <article class="gallery-item" data-category="networking">
+        <picture>
+          <source type="image/webp"
+            srcset="images/networking-480.webp 480w, images/networking-800.webp 800w"
+            sizes="(max-width:700px) 100vw, 33vw">
+          <img src="images/networking-800.jpg" alt="DGX delegates networking during the event"
+            loading="lazy" width="800" height="533">
+        </picture>
+        <div class="gallery-text"><h3>Networking</h3><p>Delegates connect and exchange professional experiences.</p></div>
+      </article>
+
+      <article class="gallery-item" data-category="activity">
+        <picture>
+          <source type="image/webp"
+            srcset="images/cruise-480.webp 480w, images/cruise-800.webp 800w"
+            sizes="(max-width:700px) 100vw, 33vw">
+          <img src="images/cruise-800.jpg" alt="Sarawak River Cruise activity for DGX delegates"
+            loading="lazy" width="800" height="533">
+        </picture>
+        <div class="gallery-text"><h3>Delegate Activities</h3><p>Social activities extend networking beyond the formal conference programme.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="video" class="section reveal">
+  <div class="container">
+    <p class="section-label">Event Experience</p>
+    <h2>Experience DGX in Motion</h2>
+    <p>The short video communicates the atmosphere, speaker delivery and participant interaction that cannot be fully represented through photographs and written descriptions.</p>
+    <div class="video-wrapper">
+      <video controls preload="metadata" poster="images/video-poster.webp">
+        <source src="video/dgx-highlight.mp4" type="video/mp4">
+        <track kind="captions" src="video/dgx-captions.vtt" srclang="en" label="English" default>
+        Your browser does not support HTML5 video.
+      </video>
+    </div>
+  </div>
+</section>
+
+<section id="cruise" class="section section-alt reveal">
+  <div class="container cruise-layout">
+    <div>
+      <p class="section-label">Delegate Experience</p>
+      <h2>Sarawak River Cruise</h2>
+      <p>The River Cruise provides delegates with an informal environment for networking and experiencing Kuching beyond the conference venue.</p>
+      <button id="revealCruise" class="button" aria-expanded="false" aria-controls="cruiseInfo">Show Activity Information</button>
+      <div id="cruiseInfo" class="info-reveal" hidden>
+        <h3>River Cruise Information</h3>
+        <p>Delegates should follow the directional signage and instructions provided by the DGX liaison officers after the event session.</p>
+      </div>
+    </div>
+    <picture>
+      <source type="image/webp"
+        srcset="images/cruise-480.webp 480w, images/cruise-800.webp 800w"
+        sizes="(max-width:800px) 100vw, 50vw">
+      <img class="cruise-image" src="images/cruise-800.jpg"
+        alt="Directional information for the DGX Sarawak River Cruise"
+        loading="lazy" width="800" height="533">
+    </picture>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p>DGX 2026 Multimedia Case Study</p>
+  <p>Based on Digital Government Exchange 2026, organised by SAINS.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
